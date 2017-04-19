@@ -104,27 +104,20 @@
 
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">Search Engines</h3>
+          <h3 class="panel-title">Resul type</h3>
         </div>
         <div class="panel-body">
-          <p>Select the search engine(s) you want to create a query for.</p>
-          <div class="checkbox">
-            <label><input type="checkbox" value="DBLP">DBLP</label>
+          <p>Select the type of result you want.</p>
+          <div class="radio">
+            <label><input type="radio" name="nf" value="CNF">Conjunctions of disjunctions (x OR y) AND (v OR W) AND .. </label>
           </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="IEEE">IEEE Xplore</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="ACM">ACM Digital Library</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="">Web of Science</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="">Scopus</label>
+          <div class="radio">
+            <label><input type="radio" name="nf" value="DNF">Disjunctions of conjunctions (x AND v AND ..) OR (x AND w ..) OR .. </label>
           </div>
         </div>
       </div>
+
+
 
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -142,7 +135,7 @@
         </div>
         <div class="panel-body">
           <p>The results are shown below</p>
-          <p id="result"></p>
+          <pre id="result"></pre>
         </div>
       </div>
 
