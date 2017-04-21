@@ -1,6 +1,6 @@
 # SLR-GEN
 
-Structures literature review query generator
+Structured literature review query generator
 
 https://jazsingh.github.io/SLR-GEN/
 
